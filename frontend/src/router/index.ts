@@ -8,6 +8,7 @@ const Pipeline = () => import('@/views/pipeline/index.vue')
 const Elevator = () => import('@/views/elevator/index.vue')
 const Crane = () => import('@/views/crane/index.vue')
 const Forklift = () => import('@/views/forklift/index.vue')
+const ForkliftDetail = () => import('@/views/forklift/detail.vue')
 const Inspection = () => import('@/views/inspection/index.vue')
 const Maintenance = () => import('@/views/maintenance/index.vue')
 const Hazard = () => import('@/views/hazard/index.vue')
@@ -33,6 +34,7 @@ const router = createRouter({
     { path: '/elevator', name: 'elevator', component: Elevator },
     { path: '/crane', name: 'crane', component: Crane },
     { path: '/forklift', name: 'forklift', component: Forklift },
+    { path: '/forklift/:id', name: 'forklift-detail', component: ForkliftDetail },
     { path: '/inspection', name: 'inspection', component: Inspection },
     { path: '/maintenance', name: 'maintenance', component: Maintenance },
     { path: '/hazard', name: 'hazard', component: Hazard },
